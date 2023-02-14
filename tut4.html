@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2> FORM</h2>
+    <form action="backend.php">
+        <div> NAME: <input type="text"></div><br>
+        <div> ROLE: <input type="text"></div><br>
+        <div> EMAIL: <input type="email" name="my email"> </div><br>
+        <div> CATEGORY: <input type="text"></div><br>
+        <!-- no letters could be added in no. except e where it denotes power (12e2)-->
+        <div> D.O.B. <input type="date" name="my date"></div><br>
+        <div> ARE YOU ELIGIBLE? <input type="checkbox" name="myeligibility"></div><br>
+        <!-- radio - to select only option -->
+        <div> GENDER: Male<input type="radio" name="mygender">FeMale<input type="radio" name="mygender">Other<input
+                type="radio" name="mygender"></div><br>
+        <div> Write about yourself: <textarea name="mytext" cols="30" rows="3"></textarea></div><br>
+        <div><label for="car">car</label>
+            <!-- options comes under select -->
+            <select name="mycar" id="car">
+                <option value="swi">swift</option>
+                <option value="dus">duster</option>
+                <option value="nex">nexon</option>
+                <option value="inn">innova</option>
+            </select>
+        </div><br>
+        <div><input type="submit" value="submit now"></div><br>
+        <div><input type="reset" value="reset now"></div>
+    </form>
+</body>
+
+</html>
